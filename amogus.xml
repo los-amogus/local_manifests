@@ -11,7 +11,6 @@
 
     <!-- Remove LineageOS / AOSP projects replaced by SM6125 / moto-common -->
     <remove-project name="platform/external/fastrpc" />
-    <remove-project name="platform/hardware/qcom/bootctrl" />
     <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
     <remove-project name="LineageOS/android_hardware_qcom_thermal" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" />
@@ -25,19 +24,19 @@
 
     <!-- Motorola Common & Amogus (SM6125) -->
     <project path="device/motorola/amogus" name="android_device_motorola_amogus"
-        remote="los-amogus" revision="lineage-21" />
+        remote="los-amogus" revision="lineage-22" />
     <project path="device/motorola/common" name="android_device_motorola_common"
-        remote="los-amogus" revision="lineage-21">
+        remote="los-amogus" revision="lineage-22">
         <linkfile src="hardware/qcom/os_pickup_ext.mk" dest="vendor/qcom/opensource/Android.mk" />
     </project>
     <project path="vendor/motorola/amogus" name="android_vendor_motorola_amogus"
-        remote="los-amogus" revision="lineage-21" />
+        remote="los-amogus" revision="lineage-22" />
     <project path="vendor/motorola/common" name="android_vendor_motorola_common"
-        remote="los-amogus" revision="lineage-21" />
+        remote="los-amogus" revision="lineage-22" />
     <project path="kernel/motorola/msm-4.14" name="android_kernel_motorola_msm-4.14"
-        remote="los-amogus" revision="lineage-21" />
+        remote="los-amogus" revision="lineage-22" />
     <project path="hardware/motorola" name="android_hardware_motorola"
-        remote="los-amogus" revision="lineage-21" />
+        remote="los-amogus" revision="lineage-22" />
 
     <!-- Misc & Kernel Clang Toolchain -->
     <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="platform_prebuilts_clang_host_linux-x86_clang-r383902"
@@ -51,17 +50,17 @@
     <project path="vendor/sony/timekeep" name="android_vendor_sony_timekeep"
         remote="los-amogus" revision="master" />
 
-    <!-- QCOM Common (AOSPA uvite) -->
+    <!-- QCOM Common (AOSPA vauxite) -->
     <project path="device/qcom/common" name="android_device_qcom_common"
-        remote="aospa" revision="uvite" />
+        remote="aospa" revision="vauxite" />
     <project path="device/qcom/qssi" name="android_device_qcom_qssi"
-        remote="aospa" revision="uvite" />
+        remote="aospa" revision="vauxite" />
     <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr"
-        remote="aospa" revision="uvite" />
+        remote="aospa" revision="vauxite" />
     <project path="external/fastrpc" name="android_external_fastrpc"
-        remote="aospa" revision="uvite" />
+        remote="aospa" revision="vauxite" />
     <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common"
-        remote="aospa-vendor" revision="uvite" />
+        remote="aospa-vendor" revision="vauxite" />
 
     <!-- QCOM SM8150 / Legacy Stack (los-amogus mirrors) -->
     <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common"
@@ -123,7 +122,7 @@
     <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator"
         remote="los-amogus" revision="master" />
 
-    <!-- GApps (MindTheGapps for Android 14 / LineageOS 21) -->
+    <!-- GApps (MindTheGapps for Android 15 / LineageOS 22.2) -->
     <project path="vendor/gapps" name="MindTheGapps/vendor_gapps"
-        remote="gitlab" revision="upsilon" clone-depth="1" />
+        remote="gitlab" revision="vic" clone-depth="1" />
 </manifest>

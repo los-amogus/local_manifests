@@ -1,4 +1,4 @@
-# LineageOS 21 (Android 14) Local Manifest for Motorola `amogus` (SM6125)
+# LineageOS 22.2 (Android 15) Local Manifest for Motorola `amogus` (SM6125)
 
 Unified device tree for:
 - `rav` (Moto G8 / Moto G Fast 2020)
@@ -9,8 +9,8 @@ Unified device tree for:
 ## Usage
 
 ```bash
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
-git clone https://github.com/los-amogus/local_manifests.git -b lineage-21 .repo/local_manifests
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
+git clone https://github.com/los-amogus/local_manifests.git -b lineage-22 .repo/local_manifests
 repo sync -c -j$(nproc)
 source build/envsetup.sh
 breakfast amogus
