@@ -10,9 +10,11 @@ Unified device tree for:
 
 ```bash
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
-git clone https://github.com/los-SM6125/local_manifests.git -b lineage-21 .repo/local_manifests
+git clone https://github.com/los-amogus/local_manifests.git -b lineage-21 .repo/local_manifests
 repo sync -c -j$(nproc)
 source build/envsetup.sh
-lunch lineage_amogus-userdebug
+breakfast amogus
 mka bacon
 ```
+
+Or run `brunch amogus` directly after `source build/envsetup.sh` to execute `breakfast amogus` and `mka bacon` in one step.
