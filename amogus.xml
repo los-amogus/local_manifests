@@ -6,6 +6,8 @@
         fetch="https://github.com/AOSPA/" />
     <remote name="aospa-vendor"
         fetch="https://github.com/ThankYouMario/" />
+    <remote name="gitlab"
+        fetch="https://gitlab.com/" />
 
     <!-- Remove LineageOS / AOSP projects replaced by SM6125 / moto-common -->
     <remove-project name="platform/external/fastrpc" />
@@ -120,4 +122,8 @@
         remote="los-sm6125" revision="master" />
     <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator"
         remote="los-sm6125" revision="master" />
+
+    <!-- GApps (MindTheGapps for Android 14 / LineageOS 21) -->
+    <project path="vendor/gapps" name="MindTheGapps/vendor_gapps"
+        remote="gitlab" revision="upsilon" clone-depth="1" />
 </manifest>
