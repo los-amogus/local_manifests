@@ -11,6 +11,7 @@
 
     <!-- Remove LineageOS / AOSP projects replaced by SM6125 / moto-common -->
     <remove-project name="platform/external/fastrpc" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom/display" />
     <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
     <remove-project name="LineageOS/android_hardware_qcom_thermal" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" />
@@ -52,7 +53,7 @@
 
     <!-- QCOM Common (AOSPA vauxite) -->
     <project path="device/qcom/common" name="android_device_qcom_common"
-        remote="aospa" revision="vauxite" />
+        remote="los-amogus" revision="vauxite" />
     <project path="device/qcom/qssi" name="android_device_qcom_qssi"
         remote="aospa" revision="vauxite" />
     <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr"
@@ -60,7 +61,7 @@
     <project path="external/fastrpc" name="android_external_fastrpc"
         remote="aospa" revision="vauxite" />
     <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common"
-        remote="aospa-vendor" revision="vauxite" />
+        remote="los-amogus" revision="vauxite" />
 
     <!-- QCOM SM8150 / Legacy Stack (los-amogus mirrors) -->
     <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common"
@@ -86,10 +87,14 @@
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+        <linkfile src="os_pickup_qssi_lineage.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
+        <linkfile src="os_pickup_qssi_lineage.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8750/Android.mk" />
     </project>
     <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl"
         remote="los-amogus" revision="master" />
-    <project path="system/qcom" name="android_system_qcom"
+    <project path="vendor/qcom/opensource/softap" name="android_system_qcom"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/audio/sm8150" name="platform_vendor_qcom_opensource_audio_sm8150"
         remote="los-amogus" revision="master" />
@@ -103,7 +108,7 @@
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices"
         remote="los-amogus" revision="master" />
-    <project path="vendor/qcom/opensource/display/sm8150" name="platform_vendor_qcom_opensource_display_sm8150"
+    <project path="hardware/qcom/display" name="platform_vendor_qcom_opensource_display_sm8150"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/display-commonsys-intf" name="platform_vendor_qcom_opensource_display-commonsys-intf"
         remote="los-amogus" revision="master" />
