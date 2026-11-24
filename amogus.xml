@@ -97,7 +97,7 @@
     <project path="vendor/qcom/opensource/softap" name="android_system_qcom"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/audio/sm8150" name="platform_vendor_qcom_opensource_audio_sm8150"
-        remote="los-amogus" revision="lineage-22.2" />
+        remote="los-amogus" revision="lineage-23.2" />
     <project path="vendor/qcom/opensource/audio/st-hal" name="platform_vendor_qcom_opensource_audio_st-hal"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/commonsys/fm" name="platform_vendor_qcom_opensource_fm-commonsys"
@@ -109,7 +109,7 @@
     <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices"
         remote="los-amogus" revision="master" />
     <project path="hardware/qcom/display" name="platform_vendor_qcom_opensource_display_sm8150"
-        remote="los-amogus" revision="lineage-22.2" />
+        remote="los-amogus" revision="lineage-23.2" />
     <project path="vendor/qcom/opensource/display-commonsys-intf" name="platform_vendor_qcom_opensource_display-commonsys-intf"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/fwk-detect" name="platform_vendor_qcom_opensource_fwk-detect"
