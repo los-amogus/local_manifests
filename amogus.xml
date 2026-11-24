@@ -51,9 +51,9 @@
     <project path="vendor/sony/timekeep" name="android_vendor_sony_timekeep"
         remote="los-amogus" revision="master" />
 
-    <!-- QCOM Common (AOSPA vauxite) -->
+    <!-- QCOM Common (AOSPA beryl) -->
     <project path="device/qcom/common" name="android_device_qcom_common"
-        remote="los-amogus" revision="vauxite" />
+        remote="los-amogus" revision="beryl" />
     <project path="device/qcom/qssi" name="android_device_qcom_qssi"
         remote="aospa" revision="vauxite" />
     <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr"
@@ -61,7 +61,7 @@
     <project path="external/fastrpc" name="android_external_fastrpc"
         remote="aospa" revision="vauxite" />
     <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common"
-        remote="los-amogus" revision="vauxite" />
+        remote="los-amogus" revision="beryl" />
 
     <!-- QCOM SM8150 / Legacy Stack (los-amogus mirrors) -->
     <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common"
