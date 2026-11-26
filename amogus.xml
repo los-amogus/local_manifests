@@ -129,9 +129,7 @@
     <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator"
         remote="los-amogus" revision="master" />
 
-    <!-- GApps (uncomment and set Android 16 branch when ready) -->
-    <!--
+    <!-- GApps (MindTheGapps Android 16 / baklava) -->
     <project path="vendor/gapps" name="MindTheGapps/vendor_gapps"
         remote="gitlab" revision="baklava" clone-depth="1" />
-    -->
 </manifest>
