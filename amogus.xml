@@ -13,6 +13,7 @@
     <remove-project name="platform/external/fastrpc" />
     <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
     <remove-project name="LineageOS/android_hardware_qcom_thermal" />
+    <remove-project name="LineageOS/android_hardware_qcom_wlan" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_core-utils-vendor" />
@@ -56,9 +57,9 @@
     <project path="device/qcom/qssi" name="android_device_qcom_qssi"
         remote="aospa" revision="vauxite" />
     <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr"
-        remote="aospa" revision="vauxite" />
+        remote="los-amogus" revision="beryl" />
     <project path="external/fastrpc" name="android_external_fastrpc"
-        remote="aospa" revision="vauxite" />
+        remote="aospa" revision="beryl" />
     <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common"
         remote="los-amogus" revision="beryl" />
 
@@ -84,11 +85,13 @@
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450-6.6/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450-6.6/Android.mk" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
-        <linkfile src="os_pickup_qssi_lineage.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
-        <linkfile src="os_pickup_qssi_lineage.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8750/Android.mk" />
     </project>
     <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl"
@@ -108,6 +111,8 @@
     <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices"
         remote="los-amogus" revision="master" />
     <project path="hardware/qcom/display" name="platform_vendor_qcom_opensource_display_sm8150"
+        remote="los-amogus" revision="lineage-23.2" />
+    <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan"
         remote="los-amogus" revision="lineage-23.2" />
     <project path="vendor/qcom/opensource/display-commonsys-intf" name="platform_vendor_qcom_opensource_display-commonsys-intf"
         remote="los-amogus" revision="master" />
