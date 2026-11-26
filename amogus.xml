@@ -39,9 +39,7 @@
     <project path="hardware/motorola" name="android_hardware_motorola"
         remote="los-amogus" revision="lineage-23.2" />
 
-    <!-- Misc & Kernel Clang Toolchain -->
-    <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="platform_prebuilts_clang_host_linux-x86_clang-r383902"
-        remote="los-amogus" revision="master" clone-depth="1" />
+    <!-- Misc -->
     <project path="device/sony/sepolicy" name="android_device_sony_sepolicy"
         remote="los-amogus" revision="master" />
     <project path="vendor/goodix" name="platform_vendor_goodix"
