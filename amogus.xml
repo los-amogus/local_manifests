@@ -25,19 +25,19 @@
 
     <!-- Motorola Common & Amogus (SM6125) -->
     <project path="device/motorola/amogus" name="android_device_motorola_amogus"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="device/motorola/common" name="android_device_motorola_common"
-        remote="los-amogus" revision="lineage-23.2">
+        remote="los-amogus" revision="lineage-24.0">
         <linkfile src="hardware/qcom/os_pickup_ext.mk" dest="vendor/qcom/opensource/Android.mk" />
     </project>
     <project path="vendor/motorola/amogus" name="android_vendor_motorola_amogus"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="vendor/motorola/common" name="android_vendor_motorola_common"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="kernel/motorola/msm-4.14" name="android_kernel_motorola_msm-4.14"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="hardware/motorola" name="android_hardware_motorola"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
 
     <!-- Misc -->
     <project path="device/sony/sepolicy" name="android_device_sony_sepolicy"
@@ -49,17 +49,17 @@
     <project path="vendor/sony/timekeep" name="android_vendor_sony_timekeep"
         remote="los-amogus" revision="master" />
 
-    <!-- QCOM Common (AOSPA beryl) -->
+    <!-- QCOM Common (AOSPA calcite) -->
     <project path="device/qcom/common" name="android_device_qcom_common"
-        remote="los-amogus" revision="beryl" />
+        remote="los-amogus" revision="calcite" />
     <project path="device/qcom/qssi" name="android_device_qcom_qssi"
         remote="aospa" revision="vauxite" />
     <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr"
-        remote="los-amogus" revision="beryl" />
+        remote="los-amogus" revision="calcite" />
     <project path="external/fastrpc" name="android_external_fastrpc"
-        remote="aospa" revision="beryl" />
+        remote="aospa" revision="calcite" />
     <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common"
-        remote="los-amogus" revision="beryl" />
+        remote="los-amogus" revision="calcite" />
 
     <!-- QCOM SM8150 / Legacy Stack (los-amogus mirrors) -->
     <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common"
@@ -91,13 +91,15 @@
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8750/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8850/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8850/Android.mk" />
     </project>
     <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/softap" name="android_system_qcom"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/audio/sm8150" name="platform_vendor_qcom_opensource_audio_sm8150"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="vendor/qcom/opensource/audio/st-hal" name="platform_vendor_qcom_opensource_audio_st-hal"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/commonsys/fm" name="platform_vendor_qcom_opensource_fm-commonsys"
@@ -109,9 +111,9 @@
     <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices"
         remote="los-amogus" revision="master" />
     <project path="hardware/qcom/display" name="platform_vendor_qcom_opensource_display_sm8150"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan"
-        remote="los-amogus" revision="lineage-23.2" />
+        remote="los-amogus" revision="lineage-24.0" />
     <project path="vendor/qcom/opensource/display-commonsys-intf" name="platform_vendor_qcom_opensource_display-commonsys-intf"
         remote="los-amogus" revision="master" />
     <project path="vendor/qcom/opensource/fwk-detect" name="platform_vendor_qcom_opensource_fwk-detect"
@@ -129,7 +131,7 @@
     <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator"
         remote="los-amogus" revision="master" />
 
-    <!-- GApps (MindTheGapps Android 16 / baklava) -->
+    <!-- GApps (MindTheGapps Android 17 / cinnamonbun) -->
     <project path="vendor/gapps" name="MindTheGapps/vendor_gapps"
-        remote="gitlab" revision="baklava" clone-depth="1" />
+        remote="gitlab" revision="cinnamonbun" clone-depth="1" />
 </manifest>
