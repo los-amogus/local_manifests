@@ -11,6 +11,7 @@
 
     <!-- Remove LineageOS / AOSP projects replaced by SM6125 / moto-common -->
     <remove-project name="platform/external/fastrpc" />
+    <remove-project name="LineageOS/android_device_qcom_sepolicy_vndr" />
     <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
     <remove-project name="LineageOS/android_hardware_qcom_thermal" />
     <remove-project name="LineageOS/android_hardware_qcom_wlan" />
